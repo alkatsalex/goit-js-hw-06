@@ -231,3 +231,29 @@ function getRandomHexColor() {
 btnChangeColor.addEventListener(`click`, getRandomHexColor)
 
 
+// task 10 -----------------------------------------------
+const boxes = document.querySelector(`#boxes`)
+const inputNumber = document.querySelector(` input[type="number"]`)
+console.log(btnCreate);
+let martkup = ""
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
+
+
+function createBoxes(amount){
+
+}
+
+for (let i = 2; i < 2 ; i+=1) {
+  console.log(i * 10)
+  const step = i * 10
+  const box = document.createElement(`div`)
+  boxes.append(box)
+  box.style.width = `${step + 10}px`
+  box.style.height = `${step + 10}px`
+  box.style.backgroundColor = getRandomHexColor()
+}
