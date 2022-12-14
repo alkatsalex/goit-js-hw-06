@@ -39,7 +39,7 @@ ingredients.forEach(function (ingredient) {
     newListIngredients.append(listIngredientsItem)
     listIngredientsItem.classList.add("item")
     listIngredientsItem.textContent = ingredient
-// })
+})
 // const listIngredientsItem = document.createElement(`li`);
 // listIngredientsItem.textContent = ingredients
 // console.log(listIngredientsItem.textContent)
