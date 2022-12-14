@@ -34,12 +34,12 @@ const newListIngredients = document.querySelector(`#ingredients`)
 
 
 // Перебор для створення нових елементів списку та додавання їх в DOM 
-// ingredients.forEach(function (ingredient) {
-//   const listIngredientsItem = document.createElement(`li`);
-//     newListIngredients.append(listIngredientsItem)
-//     listIngredientsItem.classList.add("item")
-//     listIngredientsItem.textContent = ingredient
+ingredients.forEach(function (ingredient) {
+  const listIngredientsItem = document.createElement(`li`);
+    newListIngredients.append(listIngredientsItem)
+    listIngredientsItem.classList.add("item")
+    listIngredientsItem.textContent = ingredient
 // })
-const listIngredientsItem = document.createElement(`li`);
-listIngredientsItem.textContent = ingredients
-console.log(listIngredientsItem.textContent)
+// const listIngredientsItem = document.createElement(`li`);
+// listIngredientsItem.textContent = ingredients
+// console.log(listIngredientsItem.textContent)
